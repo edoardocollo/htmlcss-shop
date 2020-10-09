@@ -10,9 +10,11 @@
 #main_content_container {
   text-align: center;
 }
+
 .row_product {
   margin-top: 50px;
 }
+
 .product{
   position: relative;
   display: inline-block;
@@ -30,12 +32,15 @@
   right: 0;
   padding: 3px;
 }
+
 .badge::before{
   content: "-30%";
 }
+
 .row_product .product:nth-child(2) .badge{
   background-color: red;
 }
+
 .row_product .product:nth-child(2) .badge::before{
   content: "-5%";
 }
@@ -50,7 +55,8 @@
   color: red;
   font-size: 25px;
 }
+
 .product:hover .heart {
   visibility: visible;
-} 
+}
 /* /heart section
