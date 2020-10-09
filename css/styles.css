@@ -1,14 +1,27 @@
+/* reset */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+/* reset */
+
+/* structure section */
+#main_content_container {
+  text-align: center;
+}
+.row_product {
+  margin-top: 50px;
+}
 .product{
   position: relative;
   display: inline-block;
   text-align: center;
-
 }
+/* structure section */
+
+
+/* badge section */
 .badge {
   display: inline-block;
   background-color: green;
@@ -16,12 +29,28 @@
   top: 0;
   right: 0;
   padding: 3px;
-
 }
-.heart {
+.badge::before{
+  content: "-30%";
+}
+.row_product .product:nth-child(2) .badge{
+  background-color: red;
+}
+.row_product .product:nth-child(2) .badge::before{
+  content: "-5%";
+}
+/* /badge section */
+
+/* heart section */
+.heart{
+  visibility: hidden;
   position: absolute;
   bottom: 0;
   margin-bottom: 10px;
   color: red;
   font-size: 25px;
 }
+.product:hover .heart {
+  visibility: visible;
+} 
+/* /heart section
