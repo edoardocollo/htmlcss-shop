@@ -1,1 +1,27 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.product{
+  position: relative;
+  display: inline-block;
+  text-align: center;
 
+}
+.badge {
+  display: inline-block;
+  background-color: green;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 3px;
+
+}
+.heart {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 10px;
+  color: red;
+  font-size: 25px;
+}
